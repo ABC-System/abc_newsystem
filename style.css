@@ -157,9 +157,31 @@ body, html {
   gap: 40px;
 }
 
+
+/* PDFセクションのレイアウト */
+.pdf-section {
+  width: 100%;
+  max-width: 700px; /* 最大幅を大きく調整 */
+  margin: 0 auto; /* セクション全体を中央に配置 */
+}
+
+/* PDF表示領域（スクロール可能） */
 .pdf-display {
-  width: 48%;
-  padding-right: 20px;
+  width: 100%; /* 親コンテナの幅に合わせる */
+  height: 600px; /* PDFの表示領域を大きくする */
+  overflow-y: scroll; /* 縦スクロールを有効にする */
+  border: 1px solid #ddd; /* 境界線を追加して見やすくする */
+}
+
+#pdf-viewer {
+  width: 100%;
+  height: auto;
+}
+
+canvas {
+  width: 100% !important; /* キャンバスの幅を親要素に合わせる */
+  height: auto !important; /* キャンバスの高さを自動で調整 */
+  margin-bottom: 20px; /* 各ページの間に余白を追加 */
 }
 
 .pdf-title {
@@ -238,7 +260,7 @@ body, html {
   align-items: stretch;
 }
 
-.pdf-display, #application {
+ #application {
   width: 48%;
   display: flex;
   flex-direction: column;
