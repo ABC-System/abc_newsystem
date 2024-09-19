@@ -394,6 +394,13 @@ iframe {
     font-size: 1.8rem;
   }
 
+  .pdf-display {
+    width: 100%; /* 親コンテナの幅に合わせる */
+    height: 300px; /* PDFの表示領域を大きくする */
+    overflow-y: scroll; /* 縦スクロールを有効にする */
+    border: 1px solid #ddd; /* 境界線を追加して見やすくする */
+  }
+
   .Form-Title {
     margin-top: 20px;
   }
