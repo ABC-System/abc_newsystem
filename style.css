@@ -199,6 +199,11 @@ canvas {
   padding-bottom: 10px;
 }
 
+span{
+  font-size: 0.8rem;
+  color: red;
+}
+
 .Form-Title {
   font-size: 1.8rem;
   color: #333;
@@ -248,7 +253,7 @@ canvas {
 }
 
 .Form-Item-Textarea {
-  height: 300px;
+  height: 280px;
 }
 
 .content-wrapper {
