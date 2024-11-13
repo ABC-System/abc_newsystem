@@ -178,6 +178,7 @@ body, html {
   height: auto;
 }
 
+
 canvas {
   width: 100% !important; /* キャンバスの幅を親要素に合わせる */
   height: auto !important; /* キャンバスの高さを自動で調整 */
@@ -317,6 +318,36 @@ iframe {
   box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); /* ホバー時に影を強調 */
 }
 
+/* リンクを中央に配置 */
+.detail-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* ボタン風のリンクスタイル */
+.detail-link a {
+  display: inline-block;
+  padding: 15px 30px;
+  background: linear-gradient(45deg, #ff6b6b, #ff9472);
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 50px; /* 丸みを強調 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* アイコンのスタイル */
+.detail-link a i {
+  margin-right: 10px;
+}
+
+/* ホバー時の効果 */
+.detail-link a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
 /* Footer */
 .footer {
   margin-top: auto;
