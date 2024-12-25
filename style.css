@@ -53,6 +53,167 @@ body, html {
   width: auto;
 }
 
+.information {
+  background: #ffffff;
+  padding:15px 0;
+  margin:0;
+  overflow: hidden;
+}
+
+.infoText {
+  color: #00BBC9;
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 100%;
+  white-space: nowrap;
+  display: inline-block;
+  animation: infoAnimation 25s linear infinite;
+}
+
+.infoText > p {
+  display:inline-block;
+  margin:0 1rem 0 0;
+} 
+
+
+/* 横に流れていくアニメーション */
+@keyframes infoAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+
+/* アーカイブセクション */
+#archive-section {
+  text-align: center; /* 見出しと画像を中央揃え */
+  padding: 40px;
+  background-color: #fff;
+}
+
+.archive-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  width: 300px;
+  color: #333;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #00BBC9; /* 青い下線を追加 */
+  padding-bottom: 10px;
+  display: inline-block; /* 下線を文字幅に合わせる */
+  text-align: center; /* テキストを中央に配置 */
+  margin-left: auto;
+  margin-right: auto; /* 中央揃えのために左右マージンを自動設定 */
+}
+
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+
+a.btn-3d-circle {
+  display: block;
+  width: 180px;
+  height: 180px;
+  margin: 0 auto;
+  padding: 0;
+
+  border-radius: 50%;
+}
+
+.btn-3d-circle-content {
+  display: block;
+  line-height: 100px;
+
+  width: 180px;
+  height: 180px;
+
+  -webkit-transition: all 0.6s;
+
+  transition: all 0.6s;
+
+  border-radius: 50%;
+  background: #f2f5f6;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#f2f5f6),
+    color-stop(37%, #e3eaed),
+    to(#c8d7dc)
+  );
+  background: -webkit-linear-gradient(
+    top,
+    #f2f5f6 0%,
+    #e3eaed 37%,
+    #c8d7dc 100%
+  );
+  background: linear-gradient(to bottom, #f2f5f6 0%, #e3eaed 37%, #c8d7dc 100%);
+
+  -webkit-transform-style: preserve-3d;
+
+  transform-style: preserve-3d;
+  -webkit-perspective: 150px;
+  perspective: 150px;
+}
+
+.btn-3d-circle:hover .btn-3d-circle-content {
+  -webkit-transform: rotateY(0.5turn) rotateX(-0.03turn);
+  transform: rotateY(0.5turn) rotateX(-0.03turn);
+}
+
+.btn-3d-circle:hover .btn-3d-circle-front {
+  color: black;
+  opacity: 0;
+}
+
+.btn-3d-circle:hover .btn-3d-circle-back {
+  top: calc(50% - 2rem);
+  left: calc(50% - 0.75rem);
+
+  opacity: 1;
+}
+
+.btn-3d-circle-back {
+  font-size: 3rem;
+
+  position: absolute;
+  top: 70%;
+  left: 70%;
+
+  -webkit-transition: all 0.3s;
+
+  transition: all 0.3s;
+  letter-spacing: 0;
+
+  opacity: 0;
+}
+
+
 /* 画像とスケジュールタイトル */
  /* Scheduleセクション全体を中央揃えにする */
 #schedule-section {
@@ -144,7 +305,7 @@ body, html {
 #your-opinion {
   z-index: 2;
   width: 98vw;
-  padding-top: 40px;
+  padding-top: 5px;
   padding-bottom: 60px;
   background-color: #fff;
 }
@@ -198,6 +359,11 @@ canvas {
 .pdf-title, .Form-Title {
   border-bottom: 2px solid #00BBC9;
   padding-bottom: 10px;
+}
+
+.pdf-title > span{
+  font-size: 0.8em;
+	vertical-align: top;
 }
 
 span{
@@ -378,6 +544,11 @@ iframe {
     text-align: center;
   }
 
+  .pdf-title > span{
+    font-size: 0.8em;
+	  vertical-align: top;
+  }
+
   .Form-Title {
     width: 300px;
     margin-right: auto;
@@ -428,6 +599,11 @@ iframe {
     margin-left: auto;
     text-align: center;
     font-size: 1.8rem;
+  }
+
+  .pdf-title > span{
+    font-size: 0.8em;
+	  vertical-align: top;
   }
 
   .pdf-display {

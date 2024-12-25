@@ -22,17 +22,24 @@
         </header>
 
         <main>
+            <!-- インフォメーション -->
+            <section class="information">
+                <div class="infoText">
+                    <p>2024/12/24　　全社員向けの社内説明会を行いました！　システムの完成イメージや導入メリットについて話しています。詳細は左下のスライドと録画動画をチェック！</p>
+                  </div>
+            </section>
+
             <!-- PDFとフォームのセクション -->
             <section id="your-opinion">
                 <div class="content-wrapper">
                     <!-- 左半分にPDFとタイトルを表示 -->
                     <!-- Renewal PlanのタイトルをPDF表示エリアの外に移動 -->
                     <div class="pdf-section">
-                        <h2 class="pdf-title">Progress Report</h2>
+                        <h2 class="pdf-title">12/24 MTG Slides <span style=”color:red;font-size:large>new! </span></h2>
                         <div class="pdf-display">
                         <div id="pdf-viewer"></div> <!-- 全ページが表示される領域 -->
                         <script>
-                            var url = './pdf/ProgressReport1113.pdf'; // PDFのパス
+                            var url = './pdf/presentaion1224.pdf'; // PDFのパス
                           
                             // PDF.jsの設定
                             var pdfjsLib = window['pdfjs-dist/build/pdf'];
@@ -93,8 +100,8 @@
                           
                         </div>
                         <div class="detail-link">
-                            <a href="https://drive.google.com/file/d/1SnzUYfAfXiwexHoqIey1DvPcN_t3jVMl/view?usp=drive_link">
-                                <i class="fas fa-file-alt"></i> リニューアルプランの詳細資料はこちら
+                            <a href="https://drive.google.com/file/d/1N_kN9s3T8mVuGcwTV_9m-TKIqoluD_xs/view?usp=sharing">
+                                <!--<i class="fas fa-file-alt"></i>--> 12/24の社内説明会の録画動画はこちら！
                             </a>
                         </div>
                     </div>
@@ -131,17 +138,34 @@
             </section>
 
 
+            <!-- アーカイブセクション -->
+            <!-- <section id="archive-section">
+                <h2 class="archive-title">Archives</h2>
+                <a href="https://drive.google.com/file/d/1SnzUYfAfXiwexHoqIey1DvPcN_t3jVMl/view?usp=drive_link" class="btn btn-3d-circle">
+                    <span class="btn-3d-circle-content">
+                      <span class="btn-3d-circle-front">途中経過報告書<br>作成日：11/13</span>
+                    </span>
+                    <span class="btn-3d-circle-back"><i class="fas fa-mouse-pointer"></i></span>
+                  </a>
+                  
+            </section> -->
+
             <!-- 画像とスケジュールタイトルセクション -->
             <section id="schedule-section" class="center-image">
                 <h2 class="schedule-title">Schedule</h2>
-                <img src="./images/schedule1113.png" alt="スケジュール画像" class="schedule-image">
+                <img src="./images/schedule.png" alt="スケジュール画像" class="schedule-image">
             </section>
+            
             <!-- Newsセクション -->
             <section id="news-section">
                 <h2 class="news-title">Latest News</h2>
                 <div class="news-container">
                     <div class="news-item">
-                        <h3><span style=”color:red;font-size:large>new! </span>中間報告資料をアップしました</h3>
+                        <h3><span style=”color:red;font-size:large>new! </span>社内説明会を行いました！</h3>
+                        <p>システム開発会社より、システムの完成イメージや導入メリットについて説明する社内説明会を12/24に行いました！画面上部に発表会でお見せしたスライドと動画アーカイブを残していますので、当日参加できなかった方・資料を見直したい方はぜひご覧ください！</p>
+                    </div>
+                    <div class="news-item">
+                        <h3>中間報告資料をアップしました</h3>
                         <p>9・10月を通して、どういった形でシステムを構築できるか、システム会社と話し合ってきました。その中間報告資料を画面上部（左側）に表示しています!ご意見・ご要望等あれば画面上部（右側）のフォームより投稿くださいm(_ _)m</p>
                     </div>
                     <div class="news-item">
